@@ -1,0 +1,51 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    margin-bottom: 0.5rem;
+
+    &__have {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        padding: 1rem;
+        overflow: auto;
+        border-radius: 0.5rem;
+        background-color: $cl-neutral-5;
+        max-height: 10em;
+
+        &__btn {
+            color: $cl-white;
+            gap: 0.5rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.5rem;
+            font-size: $fs-h5;
+            line-height: $lh-h5;
+            letter-spacing: 0.5px;
+            @include flex(center, flex-start);
+            &__title {
+                white-space: break-spaces;
+                max-width: 220px;
+                overflow-wrap: break-word;
+            }
+        }
+    }
+
+    &__boxEmpty {
+        height: 6rem;
+        background-color: $cl-neutral-5;
+        border-radius: 0.375rem;
+        padding-block: 1rem;
+        text-align: center;
+        @include flex(center, center);
+    }
+}
+
+.form {
+    margin-bottom: 8px;
+
+    &__btn {
+        margin-top: 20px;
+        background-color: $cl-main-purple;
+    }
+}

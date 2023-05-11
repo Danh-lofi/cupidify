@@ -1,0 +1,108 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    z-index: 1001;
+    overflow: auto;
+    background-color: $cl-white;
+    overflow: hidden;
+    overflow-y: hidden;
+
+    &__box {
+        display: flex;
+        padding: 1.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $cl-white;
+        height: 88vh;
+        @include android {
+            min-height: 92.5vh;
+            max-height: 92vh;
+        }
+
+        background-color: $cl-main-purple;
+
+        &__btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            &__button {
+                z-index: 10;
+                color: $cl-white;
+                padding: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        &__boxTitle {
+            @include flex(center, center);
+            flex-direction: column;
+            gap: 1.6rem;
+
+            &__icon {
+                color: $cl-neutral-100;
+                font-size: 1.875rem;
+                line-height: 2.25rem;
+            }
+
+            &__title {
+                font-size: $fs-body-2;
+                line-height: $lh-body-2;
+                text-align: center;
+            }
+        }
+
+        &__boxForm {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            gap: 2.2rem;
+
+            &__form {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+                padding: 0.625rem;
+                background-color: $cl-white;
+                border-radius: 1.5rem;
+
+                &__input {
+                    width: 100%;
+                    padding-inline: 0.625rem;
+                    font-weight: $fw-bold;
+                    font-size: $fs-body-2;
+                    line-height: $lh-body-2;
+
+                    &::placeholder {
+                        color: $cl-main-purple;
+                    }
+                }
+
+                &__icon {
+                    color: $cl-main-purple;
+                    font-size: 1.875rem;
+                    line-height: 2.25rem;
+                }
+            }
+
+            &__skipBtn {
+                background-color: $cl-main-purple;
+                font-size: $fs-body-2;
+                line-height: $lh-body-2;
+                color: $cl-white;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import '@/styles/variables/';
+@import '@/styles/mixins';
+
+.title {
+    line-height: 2.5rem;
+    font-size: $fs-h2;
+    color: $cl-main-purple;
+    font-weight: $fw-extrabold;
+    font-family: $ff-secondary;
+    margin-bottom: 16px;
+    padding-block: 1rem;
+}
+
+.banner {
+    margin-bottom: 2rem;
+}
+
+.body {
+    margin-bottom: 1rem;
+
+    &__title {
+        margin-bottom: 0.25rem;
+    }
+
+    &__desc {
+        color: $cl-neutral-40;
+        line-height: 1.5rem;
+    }
+}
+
+.social {
+    margin-block: 1.5rem;
+
+    &__title {
+        text-align: center;
+        line-height: 1.125rem;
+        color: $cl-neutral-40;
+        margin-bottom: 0.5rem;
+    }
+
+    &__list {
+        @include flex(center, center);
+        gap: 2rem;
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

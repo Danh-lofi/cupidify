@@ -1,0 +1,45 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    position: relative;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        background-color: $cl-neutral-5;
+        padding: 0.5rem 0.625rem;
+        border-radius: 0.5rem;
+
+        &__title {
+            font-size: 0.75rem;
+            line-height: 1rem;
+            color: $cl-neutral-40;
+        }
+
+        &__danger {
+            color: $cl-danger;
+        }
+
+        &__icon {
+            content: '';
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &__value {
+            font-size: 0.9375rem;
+            line-height: 1.25rem;
+        }
+    }
+}
+.error {
+    color: $cl-danger;
+    font-size: $fs-small-b;
+    line-height: $lh-small-b;
+    padding-left: 0.5rem;
+    font-weight: $fw-medium;
+}

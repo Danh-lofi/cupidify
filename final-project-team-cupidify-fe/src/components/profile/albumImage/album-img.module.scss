@@ -1,0 +1,41 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    filter: $drop-shadow-md;
+
+    &__isFavorite {
+        position: absolute;
+        z-index: 10;
+        padding: 0.5rem;
+        background-color: $cl-white;
+        border-bottom-right-radius: 6px;
+    }
+
+    &__isDefault {
+        position: absolute;
+        z-index: 10;
+        padding: 0.5rem;
+        background-color: $cl-neutral-60;
+        border-bottom-right-radius: 6px;
+    }
+
+    &__isShowLayout {
+        position: absolute;
+        z-index: 11;
+        width: 100%;
+        height: 100%;
+        row-gap: 3rem;
+        flex-direction: column;
+        @include flex(center, center);
+        background-color: $cl-main-purple;
+    }
+
+    &__content {
+        width: 100%;
+        aspect-ratio: 16 / 16;
+    }
+}

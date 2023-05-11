@@ -1,0 +1,47 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    aspect-ratio: 1/1;
+
+    &__show {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(85 83 107 / 0.5);
+        @include flex(center, center);
+    }
+
+    &__boxImg {
+        height: 100%;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__anotherImg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: $cl-white;
+        background-color: rgb(85 83 107 / 0.5);
+        @include flex(center, center);
+        z-index: 1;
+    }
+}
+
+.classCSS {
+    overflow: hidden;
+    border-radius: 0.75rem;
+    aspect-ratio: 1/1;
+}
+
+.addClassCSS {
+    grid-row: span 2 / span 2;
+    grid-column: span 2 / span 2;
+}

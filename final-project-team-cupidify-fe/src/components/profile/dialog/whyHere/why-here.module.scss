@@ -1,0 +1,42 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.subDialog {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: $cl-neutral-60;
+    margin-bottom: 2.5rem;
+}
+
+.container {
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+    @include flex(center, space-between);
+    background-color: $cl-neutral-5;
+
+    &__content {
+        @include flex(center, flex-start);
+
+        &__title {
+            margin-left: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            color: black;
+
+            &__name {
+                margin-bottom: 0.25rem;
+                color: $cl-neutral-100;
+                font-weight: $fw-bold;
+                font-size: $fs-h5;
+                line-height: $lh-h5;
+            }
+
+            &__sub {
+                font-size: 0.875rem;
+                line-height: 1.125rem;
+                color: $cl-neutral-60;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    &__content {
+        position: absolute;
+        inset: 0;
+        gap: 1rem;
+        background-color: $cl-primary-50;
+        @include flex(center, center);
+        flex-direction: column;
+
+        &__title {
+            color: $cl-white;
+            pointer-events: none;
+            user-select: none;
+            font-size: $fs-h2;
+            line-height: $lh-h2;
+            font-weight: $fw-extrabold;
+        }
+    }
+}

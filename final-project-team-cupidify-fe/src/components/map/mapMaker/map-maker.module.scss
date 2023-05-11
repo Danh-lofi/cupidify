@@ -1,0 +1,6 @@
+@import '@/styles/variables';
+.iconMarker {
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid $cl-red-500;
+}

@@ -1,0 +1,15 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.marginX {
+    margin-inline: 1rem;
+}
+
+.btn {
+    margin-top: auto;
+    background-color: $cl-main-purple;
+}
+
+.sliderRow {
+    margin-bottom: 0.8rem;
+}

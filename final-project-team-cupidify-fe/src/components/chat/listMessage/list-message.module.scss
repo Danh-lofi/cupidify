@@ -1,0 +1,31 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__infiniteScroll {
+        gap: 1rem;
+        padding: 0.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+
+        &__time {
+            font-size: 0.75rem;
+            line-height: 1rem;
+            text-align: center;
+        }
+    }
+
+    &__loader {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: $fw-semibold;
+        text-align: center;
+    }
+}

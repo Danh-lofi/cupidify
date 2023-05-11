@@ -1,0 +1,22 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    padding-bottom: 6rem;
+    margin-inline: 1rem;
+    background-color: $cl-white;
+
+    &__title {
+        margin-bottom: 1rem;
+
+        &__btn {
+            padding: 0.5rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

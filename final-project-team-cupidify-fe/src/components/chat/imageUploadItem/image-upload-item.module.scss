@@ -1,0 +1,24 @@
+@import '@/styles/mixins';
+@import '@/styles/variables';
+
+.container {
+    position: relative;
+    flex-shrink: 0;
+
+    &__content {
+        height: 10rem;
+        width: 10rem;
+        overflow: hidden;
+        border-radius: 0.375rem;
+    }
+
+    &__btn {
+        padding: 0.25rem;
+        background-color: $cl-red-500;
+        border-radius: 50%;
+        height: 1.5rem;
+        width: 1.5rem;
+        color: $cl-white;
+        box-shadow: $shadow-md;
+    }
+}

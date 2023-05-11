@@ -1,0 +1,37 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.btn {
+    cursor: pointer;
+    width: 89px;
+    border-radius: 0 0 0.75rem 0.75rem;
+    border-bottom: 1px solid $cl-neutral-20;
+    box-shadow: $shadow-md;
+
+    &__container {
+        box-shadow: $shadow-md;
+        width: 100%;
+        overflow: hidden;
+        aspect-ratio: 1/1;
+        border-radius: 0.75rem 0.75rem 0 0;
+    }
+
+    &__content {
+        padding-block: 0.5rem;
+        position: relative;
+        @include flex(center, space-around);
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 50%;
+            border: 1px solid #e9eaec;
+            top: 8px;
+        }
+
+        &__icon {
+            font-size: 20px;
+        }
+    }
+}

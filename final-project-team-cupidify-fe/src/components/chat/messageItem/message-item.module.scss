@@ -1,0 +1,66 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.textContainer {
+    @include flex(flex-start, flex-end);
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+
+    &__title {
+        white-space: break-spaces;
+        background-color: $cl-main-purple;
+        max-width: 250px;
+        padding: 0.625rem 1rem;
+        border-radius: 1.5rem 0 1.5rem 1.5rem;
+        font-size: $fs-body-2;
+        line-height: $lh-body-2;
+        color: $cl-neutral-0;
+        text-align: left;
+        overflow-wrap: break-word;
+    }
+}
+
+.imageContainer {
+    margin-block: 0.5rem;
+    max-width: 200px;
+    margin-left: auto;
+    text-align: right;
+}
+
+.videoContainer {
+    @include flex(flex-start, flex-end);
+    flex-wrap: wrap;
+
+    &__content {
+        max-width: 250px;
+    }
+}
+
+// not me
+.textContainer__notMe {
+    @include flex(flex-start, flex-start);
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+    &__title {
+        white-space: break-spaces;
+        background-color: $cl-neutral-5;
+        max-width: 250px;
+        padding: 0.625rem 1rem;
+        border-radius: 0 1.5rem 1.5rem 1.5rem;
+        font-size: $fs-body-2;
+        line-height: $lh-body-2;
+        text-align: left;
+        color: $cl-main-grey;
+        overflow-wrap: break-word;
+    }
+}
+
+.imageContainer__notMe {
+    max-width: 200px;
+    margin-right: auto;
+}
+
+.videoContainer__notMe {
+    @include flex(flex-start, flex-start);
+    flex-wrap: wrap;
+}

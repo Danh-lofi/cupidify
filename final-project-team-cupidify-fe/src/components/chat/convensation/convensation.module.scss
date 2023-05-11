@@ -1,0 +1,56 @@
+@import '@/styles/mixins';
+@import '@/styles/variables';
+
+.container {
+    display: flex;
+    cursor: pointer;
+
+    &__box {
+        @include flex(center, flex-start);
+        gap: 1rem;
+        flex: 1;
+
+        &__avatar {
+            max-width: 200px;
+            border-radius: 1rem;
+            overflow: hidden;
+            width: 3rem;
+            height: 3rem;
+            flex-shrink: 0;
+        }
+
+        &__content {
+            flex: 1;
+
+            &__title {
+                color: $cl-neutral-100;
+                font-weight: $fw-bold;
+                line-height: $lh-body-1;
+                font-size: 1rem;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                max-width: 200px;
+            }
+
+            &__message {
+                color: $cl-neutral-40;
+                font-size: 14px;
+                line-height: 1rem;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                max-width: 200px;
+            }
+        }
+    }
+
+    &__timeAgo {
+        flex-shrink: 0;
+        color: $cl-neutral-40;
+        font-size: 0.875rem;
+        line-height: $lh-body-2;
+    }
+}

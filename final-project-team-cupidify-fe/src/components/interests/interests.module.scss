@@ -1,0 +1,21 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    @include flex(center, center);
+    gap: 0.5rem;
+    border-radius: 2rem;
+    padding-inline: 1rem;
+    padding-block: 0.25rem;
+    width: fit-content;
+
+    span {
+        font-size: $fs-caption-1;
+        line-height: $lh-caption-1;
+        font-weight: $fw-medium;
+        color: $cl-white;
+        flex-wrap: wrap;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+}

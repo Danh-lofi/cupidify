@@ -1,0 +1,73 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    @include flex(center, flex-start);
+    position: absolute;
+    z-index: 400;
+    bottom: 5rem;
+    inset-inline: 1rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-radius: 1.5rem;
+    background-color: $cl-white;
+
+    &__boxImg {
+        width: 5.25rem;
+        aspect-ratio: 1 / 1;
+        flex-shrink: 0;
+        border-radius: 1.25rem;
+        overflow: hidden;
+
+        &__img {
+            border-radius: 1.25rem;
+        }
+    }
+
+    &__boxInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: $w-mapInfo;
+        &__content {
+            display: flex;
+            font-size: 1.25rem;
+            line-height: 1.625rem;
+            color: $cl-neutral-100;
+            margin-bottom: 0.5rem;
+            &__title {
+                display: flex;
+                max-width: 250px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+            }
+            &__age {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &__boxLocation {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 5px 0.5rem;
+        background-color: $cl-neutral-5;
+        border-radius: 25px;
+
+        &__title {
+            font-size: $fs-body-2;
+            line-height: $lh-body-2;
+        }
+    }
+
+    &__boxBtn {
+        position: absolute;
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+        top: 1rem;
+        right: 1rem;
+    }
+}

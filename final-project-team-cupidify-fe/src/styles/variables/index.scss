@@ -1,0 +1,129 @@
+@import '../fonts';
+// ----------------------------------- fs: font-size ----
+// - h
+$fs-h1: 2.5rem;
+$fs-h2: 2rem;
+$fs-h3: 1.5rem;
+$fs-h4: 1.25rem;
+$fs-h5: 1rem;
+
+// - body
+$fs-body-1: 1.5rem;
+$fs-body-2: 1rem;
+$fs-body-3: 0.875rem;
+
+// - button
+$fs-button-1: 1.125rem;
+$fs-button-2: 1rem;
+
+// - display
+$fs-display: 4rem;
+
+// - caption
+$fs-caption-1: 0.875rem;
+
+// - small
+$fs-small-b: 0.75rem;
+$fs-small-r: 0.75rem;
+
+// ----------------------------------- lh: line-height ----
+$lh-h1: 3.25rem;
+$lh-h2: 2.625rem;
+$lh-h3: 2rem;
+$lh-h4: 1.625rem;
+$lh-h5: 1.5rem;
+
+// - body
+$lh-body-1: 2rem;
+$lh-body-2: 1.5rem;
+$lh-body-3: 1.125rem;
+
+// - button
+$lh-button-1: 1.5rem;
+$lh-button-2: 1.5rem;
+
+// - display
+$lh-display: 5rem;
+
+// - caption
+$lh-caption-1: 1.125rem;
+
+// - small
+$lh-small-b: 1rem;
+$lh-small-r: 1rem;
+
+// ----------------------------------- fw: font-weight ----
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-extrabold: 800;
+
+// ----------------------------------- cl: color ----
+// - neutral
+$cl-neutral-100: #2a2846;
+$cl-neutral-80: #55536b;
+$cl-neutral-65: #7f7e90;
+$cl-neutral-60: #7a838c;
+$cl-neutral-40: #aaa9b5;
+$cl-neutral-30: #c4c3c9;
+$cl-neutral-20: #d4d4da;
+$cl-neutral-10: #eae9ed;
+$cl-neutral-5: #f4f4f6;
+$cl-neutral-0: #ffffff;
+
+// - primary
+$cl-primary-100: #7a66c7;
+$cl-primary-80: #c5c2f3;
+$cl-primary-65: #f9f9ff;
+$cl-primary-50: #7a56fe;
+
+// - main
+$cl-main-purple: #7a56fe;
+$cl-main-dark_purple: #eaeaea;
+$cl-main-grey: #343e58;
+$cl-main-pink: #fd65b7;
+$cl-main-blue: #07c6fd;
+
+$cl-sky-400: #38bdf8;
+$cl-white: #ffffff;
+$cl-resend: #5d5fef;
+$cl-danger: #fe5d5d;
+$cl-success: #5dfe5d;
+
+$cl-red-500: #ef0044;
+$cl-red-600: #dc2626;
+$cl-heart-loading: #0004;
+
+// ----------------------------------- font-family ----
+$ff-primary: 'SVN-Circular', sans-serif;
+$ff-secondary: 'SVN-Gilroy', sans-serif;
+
+// ----------------------------------- shadow: box-shadow ----
+$shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+$shadow-nav: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
+// ----------------------------------- drop shadow ----
+$drop-shadow-md: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+
+// ----------------------------------- ----
+// width
+$w-mapInfo: calc(100% - 136px);
+$w-3xl: 48rem;
+
+// $h:
+$h-swipe-ios: calc(65vh);
+$h-swipe-android: calc(70vh);
+$h-chat: calc(100vh - 357px);
+$h-xl: 25rem;
+
+// $h-list-message:
+$h-listMessage: calc(100vh - 223px);
+$h-listMessageFile: calc(100vh - 287px);
+$h-listMessageAudioFile: calc(100vh - 271px);
+$h-listMessageAudioFile-2: calc(100vh - 335px);
+
+// left
+$left: calc(100% - 3rem);

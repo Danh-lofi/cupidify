@@ -1,0 +1,52 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.content {
+    &__arrow {
+        margin-bottom: 1rem;
+    }
+
+    &__btn {
+        padding: 0.5rem;
+    }
+
+    &__body {
+        div {
+            margin-bottom: 1.5rem;
+        }
+
+        form {
+            div {
+                margin-bottom: 1rem;
+            }
+        }
+
+        &__profile {
+            padding: 1rem;
+            height: 6rem;
+            width: 6rem;
+            border-radius: 1.5rem;
+            background-color: $cl-neutral-5;
+        }
+
+        &__wrap {
+            h4 {
+                margin-bottom: 0.25rem;
+                color: $cl-neutral-100;
+            }
+            p {
+                color: $cl-neutral-40;
+                font-size: 0.875rem;
+                line-height: 1.125rem;
+            }
+        }
+    }
+
+    &__update {
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+        width: calc(100% - 2rem);
+    }
+}

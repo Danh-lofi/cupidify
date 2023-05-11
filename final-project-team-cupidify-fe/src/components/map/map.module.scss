@@ -1,0 +1,90 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    position: relative;
+    background-color: $cl-white;
+
+    &__btnLocation {
+        position: absolute;
+        z-index: 500;
+        top: 1rem;
+        left: 1rem;
+        padding: 0.75rem 0.75rem 0.5rem;
+        border-radius: 0.75rem;
+        box-shadow: $shadow-md;
+        border: 2px solid $cl-white;
+        background-color: $cl-white;
+
+        &::first-letter {
+            font-weight: $fw-bold;
+        }
+    }
+
+    &__btnNext {
+        position: absolute;
+        z-index: 500;
+        top: 5rem;
+        left: 1rem;
+        padding: 0.75rem 0.75rem 0.5rem;
+        border-radius: 0.75rem;
+        box-shadow: $shadow-md;
+        border: none;
+        background-color: $cl-white;
+
+        &::first-letter {
+            font-weight: $fw-bold;
+        }
+    }
+
+    &__btnPrev {
+        position: absolute;
+        z-index: 500;
+        top: 8rem;
+        left: 1rem;
+        padding: 0.75rem 0.75rem 0.5rem;
+        border-radius: 0.75rem;
+        box-shadow: $shadow-md;
+        border: none;
+        background-color: $cl-white;
+
+        &::first-letter {
+            font-weight: $fw-bold;
+        }
+    }
+
+    &__btnSettingRadius {
+        position: absolute;
+        z-index: 500;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.75rem 0.75rem 0.5rem;
+        border-radius: 0.75rem;
+        box-shadow: $shadow-md;
+        border: 2px solid $cl-white;
+        background-color: $cl-white;
+
+        &::first-letter {
+            font-weight: $fw-bold;
+        }
+    }
+
+    &__mapContainer {
+        height: 88vh;
+        @include android {
+            height: 90vh;
+        }
+        width: 100%;
+    }
+
+    &__notMe {
+        position: absolute;
+        z-index: 500;
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 0.375rem;
+        background-color: $cl-white;
+        color: $cl-red-600;
+        box-shadow: $shadow-md;
+    }
+}

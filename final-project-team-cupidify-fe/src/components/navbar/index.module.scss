@@ -1,0 +1,23 @@
+@import '@/styles/variables';
+
+.container {
+    position: fixed;
+    bottom: 0;
+    z-index: 400;
+    width: 100%;
+    max-width: 48rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+        background-color: $cl-white;
+        padding: 0.5rem 1.625rem;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border: 1px solid $cl-white;
+        box-shadow: $shadow-nav;
+    }
+}

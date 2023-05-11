@@ -1,0 +1,34 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    @include flex(center, space-between);
+    padding-block: 0.5rem;
+    margin-right: 12px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        text-align: left;
+        width: 95%;
+
+        &__title {
+            color: $cl-neutral-100;
+            font-weight: $fw-bold;
+            font-size: $fs-h5;
+            line-height: $lh-h5;
+            margin-bottom: 2px;
+        }
+
+        &__sub {
+            font-size: $fs-body-3;
+            line-height: $lh-body-3;
+            color: $cl-neutral-60;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+        }
+    }
+}

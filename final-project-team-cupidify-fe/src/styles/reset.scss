@@ -1,0 +1,48 @@
+@import './variables';
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+input,
+textarea,
+select,
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+input {
+    line-height: normal;
+}
+label,
+button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+li {
+    list-style-type: none;
+}
+
+select.inputSelectForm {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+}
+
+.audio::-webkit-media-controls-panel {
+    @apply bg-primary-20/40;
+}
+
+.audio::-webkit-media-controls-panel {
+    @apply bg-primary-20/40;
+}

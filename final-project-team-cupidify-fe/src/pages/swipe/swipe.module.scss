@@ -1,0 +1,119 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.swipe {
+    position: relative;
+    padding: 0 1rem;
+
+    &__box {
+        margin-bottom: 1rem;
+        padding-bottom: 7px !important;
+
+        &__wrap {
+            @include flex(center, space-between);
+            padding-top: 0.5rem;
+
+            h1 {
+                font-weight: $fw-extrabold;
+                font-size: $fs-h2;
+                color: $cl-primary-50 !important;
+                font-family: $ff-secondary;
+                line-height: 2.5rem;
+            }
+
+            &__user__not {
+                flex-direction: column;
+                @include flex(center, center);
+                height: 75vh;
+                object-fit: cover;
+                &__title {
+                    text-align: center;
+                    color: #9ca3af;
+                }
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+            &__notification {
+                &__bell {
+                    position: relative;
+                    width: 34px;
+                    height: 34px;
+                    @include flex(center, center);
+
+                    &__length {
+                        position: absolute;
+                        top: -5px;
+                        right: -5px;
+                        min-width: 20px;
+                        min-height: 20px;
+                        border-radius: 50%;
+                        background-color: $cl-main-purple;
+                        color: $cl-white;
+                        @include flex(center, center);
+                    }
+                }
+
+                &__box {
+                    position: fixed;
+                    inset: 0;
+                    z-index: 10;
+                    width: 100%;
+                    max-width: 48rem;
+                    padding-bottom: 10rem;
+                    transform: translateX(-50%);
+                    background-color: $cl-white;
+                    left: 50%;
+
+                    &__close {
+                        position: sticky;
+                        top: 0;
+                        height: 70px;
+                        @include flex(center, space-between);
+                        background-color: $cl-white;
+                        box-shadow: $shadow-md;
+                        padding: 0 1rem;
+
+                        &__btnReadAll {
+                            padding: 0.5rem;
+                            background-color: $cl-primary-50;
+                            color: $cl-white;
+                            border-radius: 0.375rem;
+                            font-size: $fs-button-1;
+                            line-height: $lh-button-1;
+                        }
+                    }
+
+                    &__content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5rem;
+                        height: 40rem;
+                        overflow-y: auto;
+                        padding: 1rem 1rem 3.5rem;
+                        background-color: $cl-white;
+                        border-radius: 0.375rem;
+
+                        &__not {
+                            flex-direction: column;
+                            @include flex(center, center);
+                            height: 100%;
+                            object-fit: cover;
+                            &__title {
+                                text-align: center;
+                                color: #9ca3af;
+                            }
+                        }
+
+                        &__loadMore {
+                            font-size: $fs-button-1;
+                            font-weight: $fw-bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

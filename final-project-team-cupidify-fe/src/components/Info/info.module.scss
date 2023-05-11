@@ -1,0 +1,17 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    gap: 0.5rem;
+    @include flex(center, flex-start);
+    background-color: $cl-neutral-5;
+    border-radius: 2rem;
+    padding: 0.25rem 0.5rem;
+    width: fit-content;
+
+    span {
+        font-size: $fs-caption-1;
+        line-height: $lh-caption-1;
+        font-weight: $fw-medium;
+    }
+}

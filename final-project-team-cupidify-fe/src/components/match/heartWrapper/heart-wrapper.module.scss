@@ -1,0 +1,15 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.container {
+    @include flex(center, center);
+    position: relative;
+    height: 40%;
+
+    &__boxImg {
+        cursor: pointer;
+        fill: transparent;
+        stroke: $cl-main-pink;
+        stroke-width: 8px;
+    }
+}
